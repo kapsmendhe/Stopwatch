@@ -55,18 +55,19 @@ function Stopwatch() {
 }
 
 function pause() {
-
+    clearInterval(interval); ///Here we are stop the setInterval
     if (Pause.innerHTML == "Continue") {
         Pause.innerHTML = "Pause";
         interval = setInterval(Stopwatch, 100);
     } else {
         Pause.innerHTML = "Continue";
-        clearInterval(interval); ///Here we are stop the setInterval
+
     }
 }
 
 function reset() {
     clearInterval(interval);
+    Pause.innerHTML = "Pause";
     Reset.disabled = true;
     Pause.disabled = true;
     Start.disabled = false;
