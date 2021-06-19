@@ -1,16 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   align-self: center;
+
+  padding: 100px;
 }
 
-#houres,
+/* #houres,
 #minutes,
 #seconds {
   font-size: xx-large;
-}
+} */
 
 #start,
 #pause,
@@ -19,7 +36,9 @@
 }
 
 .stopwatch {
-  justify-content: space-around;
+  padding: 20px;
+  font-size: xx-large;
+  /* justify-content: space-around; */
 }
 
 .btn {
